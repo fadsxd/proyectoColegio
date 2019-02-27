@@ -8,8 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { ContactosComponent } from './contactos/contactos.component';
 import { GestionComponent } from './gestion/gestion.component';
 
-const routes : Route = [
-  {path : ' ', component: HomeComponent },
+const Routes : Route = [
+  {path : '', component: HomeComponent },
   {path : 'home', component: HomeComponent },
   {path : 'contactos', component: ContactosComponent},
   {path : 'gestion', component: GestionComponent}
@@ -23,7 +23,7 @@ const routes : Route = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(Routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
