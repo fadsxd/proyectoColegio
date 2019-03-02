@@ -1,23 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+<header>
 <div class="container">
  <br/>
-  <nav class="navbar navbar-dark bg-primary">
-    <a class="navbar-brand" href="">
-      <img src="assets/img/1.png" width="50" height="40" class="d-inline-block align-top" alt="">
-      TITULO
-    </a>
-    <ul class="nav justify-content-end">
+ <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        <a class="navbar-brand" href="/home">
+            <img src="../assets/img/1.png" width="30" height="30" class="d-inline-block align-top ">
+            COLEGIO 
+          </a>
       <li class="nav-item">
-          <a routerLink="/home"><button type="button" class="btn btn-success">HOME</button></a>
+        <a routerLink="/home"><button type="button" class="btn btn-dark" aria-label="Search">INICIO</button></a>
       </li>
       <li class="nav-item">
-          <a routerLink="/gestion"><button type="button" class="btn btn-danger">GESTION"</button></a>
+        <a routerLink="/gestion"><button type="button" class="btn btn-dark" aria-label="Search">GESTION</button></a>
       </li>
       <li class="nav-item">
-          <a routerLink="/contactos"><button type="button" class="btn btn-dark">CONTACTOS</button></a>
+        <a routerLink="/contactos"><button type="button" class="btn btn-dark" aria-label="Search">CONTACTOS</button></a>
       </li>
     </ul>
-  </nav>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
   <br/>
-  <router-outlet></router-outlet>
-  
 </div>
+<router-outlet></router-outlet>
+</header>
+</body>
+</html>
