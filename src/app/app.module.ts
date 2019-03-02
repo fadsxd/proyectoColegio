@@ -8,7 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { ContactosComponent } from './contactos/contactos.component';
 import { GestionComponent } from './gestion/gestion.component';
 
-const Routes : Route[] = [
+const Routes : Route = [
   {path : '', component: HomeComponent },
   {path : 'home', component: HomeComponent },
   {path : 'contactos', component: ContactosComponent},
