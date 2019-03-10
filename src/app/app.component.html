@@ -35,7 +35,24 @@
 </nav>
     <br/>
     <router-outlet></router-outlet>
+    <div>
+        <ul class="list-group">
+            <li
+            *ngFor = "let nombre of nombreArray"
+            class="list-group-item">
+            <span class="badge badge-primary">{{nombre.id}}</span> {{nombre.name}}
+            </li>
+          </ul>
+            <div class="card mt-2">
+            <div class="card-body">
+              <div class="card-title">
+                Inserta Nombre 
+              </div>
+            </div>
+            </div>
+    </div>
   </header>
+
   <footer> 
     <h5 align="center" class="ml-2"> &copy;Todos los derechos reservados - Contactos: <a href="mailto:mickyfads5@gmail.com">Click</a></h5>
   </footer>
