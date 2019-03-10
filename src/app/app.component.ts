@@ -16,4 +16,5 @@ export class AppComponent {
     {id:1 ,name : "juan",country:"Bolivia"}
   ];
 
+  selectedNombre : Nombre = new  Nombre();
 }

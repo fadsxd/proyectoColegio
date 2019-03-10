@@ -8,7 +8,10 @@ import { HomeComponent } from './home/home.component';
 import { ContactosComponent } from './contactos/contactos.component';
 import { GestionComponent } from './gestion/gestion.component';
 
-const Routes : Route[] = [
+
+import { FormsModule} from '@angular/forms';
+
+const Routes : Route = [
   {path : '', component: HomeComponent },
   {path : 'home', component: HomeComponent },
   {path : 'contactos', component: ContactosComponent},
@@ -23,7 +26,8 @@ const Routes : Route[] = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(Routes)
+    RouterModule.forRoot(Routes),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

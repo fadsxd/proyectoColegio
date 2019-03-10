@@ -35,12 +35,12 @@
 </nav>
     <br/>
     <router-outlet></router-outlet>
-    <div>
+    <div class="mt-2">
         <ul class="list-group">
-            <li
+          <li
             *ngFor = "let nombre of nombreArray"
             class="list-group-item">
-            <span class="badge badge-primary">{{nombre.id}}</span> {{nombre.name}}
+            <span class="badge badge-primary">{{nombre.id}}</span> {{nombre.name}} - {{nombre.country}}
             </li>
           </ul>
             <div class="card mt-2">
@@ -48,6 +48,10 @@
               <div class="card-title">
                 Inserta Nombre 
               </div>
+              <div class="form-group">
+                <input class="form-control" [(ngModel)]="selectedNombre.name" placeholder="Inserte Nombre" type="text">
+                </div>
+             
             </div>
             </div>
     </div>
