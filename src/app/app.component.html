@@ -39,7 +39,9 @@
         <ul class="list-group">
           <li
             *ngFor = "let nombre of nombreArray"
-            class="list-group-item list-group-item-action">
+            class="list-group-item list-group-item-action"
+            (click)="openEdit(nombre)"
+            [class.active]="nombre === selectedNombre">
             <span class="badge badge-primary">{{nombre.id}}</span> {{nombre.name}} - {{nombre.comment}}
             </li>
           </ul>

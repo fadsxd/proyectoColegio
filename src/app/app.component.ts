@@ -18,6 +18,9 @@ export class AppComponent {
 
   selectedNombre : Nombre = new  Nombre();
 
+  openEdit(nombre:Nombre){
+    this.selectedNombre = nombre;
+  }
   addOrEdit(){
     this.selectedNombre.id = this.nombreArray.length+1;
     this.nombreArray.push(this.selectedNombre);
