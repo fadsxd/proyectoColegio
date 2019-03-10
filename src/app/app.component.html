@@ -39,8 +39,8 @@
         <ul class="list-group">
           <li
             *ngFor = "let nombre of nombreArray"
-            class="list-group-item">
-            <span class="badge badge-primary">{{nombre.id}}</span> {{nombre.name}} - {{nombre.country}}
+            class="list-group-item list-group-item-action">
+            <span class="badge badge-primary">{{nombre.id}}</span> {{nombre.name}} - {{nombre.comment}}
             </li>
           </ul>
             <div class="card mt-2">
@@ -51,6 +51,12 @@
               <div class="form-group">
                 <input class="form-control" [(ngModel)]="selectedNombre.name" placeholder="Inserte Nombre" type="text">
                 </div>
+                <div class="form-group">
+                    <input class="form-control" [(ngModel)]="selectedNombre.comment" placeholder="Inserte Comentario" type="text">
+                </div>
+                <button class="btn-primary" (click)="addOrEdit()">
+                  Submit
+                </button>
              
             </div>
             </div>
