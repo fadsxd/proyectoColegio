@@ -59,13 +59,18 @@
                 <button class="btn-primary" (click)="addOrEdit()">
                   Submit
                 </button>
-             
+                <button 
+                *ngIf="selectedNombre.id !==0" class="btm btn-danger"
+                 (click)="delete()" >
+                 DELETE
+                </button>
             </div>
             </div>
     </div>
   </header>
 
   <footer> 
+    <hr>
     <h5 align="center" class="ml-2"> &copy;Todos los derechos reservados - Contactos: <a href="mailto:mickyfads5@gmail.com">Click</a></h5>
   </footer>
   </div>

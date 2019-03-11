@@ -11,7 +11,7 @@ import { GestionComponent } from './gestion/gestion.component';
 
 import { FormsModule} from '@angular/forms';
 
-const Routes : Route = [
+const Routes : Route[] = [
   {path : '', component: HomeComponent },
   {path : 'home', component: HomeComponent },
   {path : 'contactos', component: ContactosComponent},

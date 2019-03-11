@@ -20,10 +20,20 @@ export class AppComponent {
 
   openEdit(nombre:Nombre){
     this.selectedNombre = nombre;
+    
   }
   addOrEdit(){
-    this.selectedNombre.id = this.nombreArray.length+1;
-    this.nombreArray.push(this.selectedNombre);
+    if(this.selectedNombre.id === 0)
+    {
+      this.selectedNombre.id = this.nombreArray.length+1;
+      this.nombreArray.push(this.selectedNombre);
+      this.selectedNombre = new Nombre();
+    }
+    
+  }
+  
+  delete(){
+    this.nombreArray = this.nombreArray.filter(x=> x!= this.selectedNombre)
     this.selectedNombre = new Nombre();
   }
 

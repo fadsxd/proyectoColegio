@@ -1,5 +1,5 @@
 export class Nombre {
-    id: number;
+    id: number = 0;
     name: string;
     comment: string;
 }
