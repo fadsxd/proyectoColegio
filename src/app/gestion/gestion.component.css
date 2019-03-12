@@ -10,3 +10,6 @@ iframe{
         margin:10px auto;
         display:block;
 }
+.col-3 {
+    background-color: wheat;
+}
