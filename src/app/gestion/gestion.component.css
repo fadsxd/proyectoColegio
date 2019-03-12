@@ -6,3 +6,7 @@ p{
     font-family: 'VT323', monospace;
     font-family: 'ZCOOL QingKe HuangYou', cursive;
 }
+iframe{
+        margin:10px auto;
+        display:block;
+}
