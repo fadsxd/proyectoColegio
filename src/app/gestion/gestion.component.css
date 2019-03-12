@@ -10,6 +10,10 @@ iframe{
         margin:10px auto;
         display:block;
 }
-.col-3 {
+.col-12 {
     background-color: wheat;
 }
+.centrado{
+	margin:10px auto;
+	display:block;
+    }
