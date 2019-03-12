@@ -5,7 +5,36 @@
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|VT323" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|VT323|ZCOOL+QingKe+HuangYou" rel="stylesheet"> 
-  <body>    
+    
+   <script type="text/javascript">
+        $(document).ready(function () {
+        
+        /*********************************************** boton hacia arriba **********************************************/
+        $('.ir-arriba').click(function(){
+            $('body, html').animate({
+                scrollTop: '0px'
+            }, 1000);
+        });
+    
+        $(window).scroll(function(){
+            if( $(this).scrollTop() > 0 ){
+                $('.ir-arriba').slideDown(600);
+            } else {
+                $('.ir-arriba').slideUp(600);
+            }
+        });
+    });
+        </script>
+
+
+
+    <body>  
+        <a class="ir-arriba"  href="#" title="Volver arriba">
+            <span class="fa-stack">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>  
     <div class="container">
        <header>
       <br/>
@@ -69,6 +98,8 @@
             </div>
     </div>
   </header>
+   
+
 
   <footer> 
     <hr>
